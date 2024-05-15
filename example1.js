@@ -7,8 +7,9 @@ const pointToGrade = {
 
 let grade;
 const keys = Object.keys(pointToGrade);
+
 for (k in keys) {
-  if (score >= pointToGrade[keys]) grade = keys;
+  if (score >= pointToGrade[keys]) grade = k;
   else grade = "F";
 }
 
